@@ -1,5 +1,5 @@
-# SPark
-A Java parking simulator
+# Spark
+A Java parking simulator.
 
 ## Project Structure
 ```

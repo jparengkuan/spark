@@ -1,4 +1,4 @@
-package Parkeersimulator;
+package spark;
 
 import java.awt.*;
 

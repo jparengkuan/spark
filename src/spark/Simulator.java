@@ -7,7 +7,6 @@ public class Simulator {
 	private static final String AD_HOC = "1";
 	private static final String PASS = "2";
 
-
 	private CarQueue entranceCarQueue;
     private CarQueue entrancePassQueue;
     private CarQueue paymentCarQueue;
@@ -20,7 +19,7 @@ public class Simulator {
 
     private int tickPause = 100;
 
-    int weekDayArrivals= 100; // average number of arriving cars per hour
+    int weekDayArrivals = 100; // average number of arriving cars per hour
     int weekendArrivals = 200; // average number of arriving cars per hour
     int weekDayPassArrivals= 50; // average number of arriving cars per hour
     int weekendPassArrivals = 5; // average number of arriving cars per hour
@@ -163,7 +162,7 @@ public class Simulator {
     private void addArrivingCars(int numberOfCars, String type){
         // Add the cars to the back of the queue.
     	switch(type) {
-    	case AD_HOC: 
+    	case AD_HOC:
             for (int i = 0; i < numberOfCars; i++) {
             	entranceCarQueue.addCar(new AdHocCar());
             }
